@@ -9,7 +9,6 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 ### In mijn webshop vind je: 
 - *wat je verkoopt*
 ### Deze webshop is gemaakt door: 
-<<<<<<< HEAD
 - *Sam Van Beek* 
 - *Anthony Hitalessy*
 - *Thijs Kramer*
