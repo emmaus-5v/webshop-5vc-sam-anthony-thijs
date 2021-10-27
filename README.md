@@ -11,8 +11,8 @@ of in Gitpod (gitpod is zonder mailen van orders en zonder permanent hosten):
 ### Deze webshop is gemaakt door: 
 <<<<<<< HEAD
 - *Sam Van Beek* 
-- *naam van leerling 1* 
--  *Anthony Hitalessy*
+- *Anthony Hitalessy*
+- *Thijs Kramer*
 
 # Mijn aanpak
 Werk de planning af van boven naar beneden<br>
