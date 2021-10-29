@@ -21,13 +21,12 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje alleen het eten is redelijk duur.', '816905633-0', 10.5);
+insert into products (name, description, code, price) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje.', '816905633-0', 10.5);
 
-insert into products (name, description, code, price) values ('Post Mortem', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
-
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '077030122-3', 11);
+insert into products (name, description, code, price) values ('TRIXIE GROOT BUITENVERBLIJF MET REN', 'Het Trixie Groot buitenverblijf met ren is een compleet verblijf voor uw konijn of cavia.
+Het is gemaakt van gebeitst vurenhout met stevig metalen, gepoedercoat traliewerk en bitumen dak.
+Het verblijf bestaat uit twee verdiepingen met beneden een ren en schuilplek. 
+Door de kunststof uitschuiflade is het hok makkelijk te verschonen. Er zit extra opbergruimte in het dak. Ook geschikt voor kleine leefgroepen.', '077030122-3', 249,60);
 insert into products (name, description, code, price) values ('Scarlet and the Black, The', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
