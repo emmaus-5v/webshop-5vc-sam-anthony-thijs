@@ -45,3 +45,19 @@ CREATE TABLE dieren (
   ras TEXT,
   prijs NUMERIC
 );
+
+CREATE TABLE products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  naam TEXT
+  beschrijving TEXT,
+  code code VARCHAR(15),,
+  prijs NUMERIC,
+  soort-id INTEGER
+);
+CREATE TABLE accesoires (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur TEXT,
+  dier-id INTEGER,
+  prijs NUMERIC
+  eten/hok TEXt
+);
