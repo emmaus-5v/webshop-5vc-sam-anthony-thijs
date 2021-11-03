@@ -27,6 +27,7 @@ insert into products (name, description, code, price) values ('TRIXIE GROOT BUIT
 Het is gemaakt van gebeitst vurenhout met stevig metalen, gepoedercoat traliewerk en bitumen dak.
 Het verblijf bestaat uit twee verdiepingen met beneden een ren en schuilplek. 
 Door de kunststof uitschuiflade is het hok makkelijk te verschonen. Er zit extra opbergruimte in het dak. Ook geschikt voor kleine leefgroepen.', '077030122-3', 249,60);
+
 insert into products (name, description, code, price) values ('Scarlet and the Black, The', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
