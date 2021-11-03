@@ -38,3 +38,10 @@ insert into products (name, description, code, price) values ('Velvet Goldmine',
 
 Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
 
+CREATE TABLE dieren (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  soort TEXT,
+  kleur TEXT,
+  ras TEXT,
+  prijs NUMERIC
+);
