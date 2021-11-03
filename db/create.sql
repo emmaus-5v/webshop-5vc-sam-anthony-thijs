@@ -26,13 +26,8 @@ insert into products (name, description, code, price) values ('Cavia', 'Cavia is
 insert into products (name, description, code, price) values ('TRIXIE GROOT BUITENVERBLIJF MET REN', 'Het Trixie Groot buitenverblijf met ren is een compleet verblijf voor uw konijn of cavia.
 Het is gemaakt van gebeitst vurenhout met stevig metalen, gepoedercoat traliewerk en bitumen dak.
 Het verblijf bestaat uit twee verdiepingen met beneden een ren en schuilplek. 
-Door de kunststof uitschuiflade is het hok makkelijk te verschonen. Er zit extra opbergruimte in het dak. Ook geschikt voor kleine leefgroepen.', '077030122-3', 249,60);
+Door de kunststof uitschuiflade is het hok makkelijk te verschonen. Er zit extra opbergruimte in het dak. Ook geschikt voor kleine leefgroepen.', '445924201-X', 249,60);
 
-insert into products (name, description, code, price) values ('Scarlet and the Black, The', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '445924201-X', 13.5);
 insert into products (name, description, code, price) values ('Aquí llega Condemor, el pecador de la pradera', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
 
 In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
