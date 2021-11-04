@@ -11,6 +11,29 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+CREATE TABLE dieren (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  soort TEXT,
+  kleur TEXT,
+  ras TEXT,
+  prijs INTEGER
+);
+
+CREATE TABLE producten (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  naam TEXT
+  beschrijving TEXT,
+  prijs INTEGER,
+  soort-id INTEGER
+);
+
+CREATE TABLE accesoires (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur TEXT,
+  dier-id INTEGER,
+  prijs INTEGER
+  accesoire-soort TEXT
+);
 
 --
 -- populate with data
@@ -38,26 +61,8 @@ insert into products (name, description, code, price) values ('Velvet Goldmine',
 
 Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
 
-CREATE TABLE dieren (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  soort TEXT,
-  kleur TEXT,
-  ras TEXT,
-  prijs NUMERIC
-);
+insert into dieren (id, soort, kleur, ras, prijs) values (1, 'Cavia', 'Zwart', 'Langhaar', 10);
 
-CREATE TABLE products (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  naam TEXT
-  beschrijving TEXT,
-  code code VARCHAR(15),,
-  prijs NUMERIC,
-  soort-id INTEGER
-);
-CREATE TABLE accesoires (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur TEXT,
-  dier-id INTEGER,
-  prijs NUMERIC
-  eten/hok TEXt
-);
+insert into producten (id, naam, beschrijving, prijs, soort-id) values (1, 'Cavia Hok', 'Een cavia hok lol', 40, 1);
+
+insert into accesoires (id, kleur, dier-id, prijs, accesoire-soort) values (1, 'Rood', 1, 40, 'hok');
