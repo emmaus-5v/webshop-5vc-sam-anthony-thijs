@@ -61,8 +61,8 @@ insert into products (name, description, code, price) values ('Velvet Goldmine',
 
 Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
 
-insert into dieren (id, soort, kleur, ras, prijs) values (1, 'Cavia', 'Zwart', 'Langhaar', 10);
+insert into dieren (soort, kleur, ras, prijs) values ('Cavia', 'Zwart', 'Langhaar', 10);
 
-insert into producten (id, naam, beschrijving, prijs, soort-id) values (1, 'Cavia Hok', 'Een cavia hok lol', 40, 1);
+insert into producten (naam, beschrijving, prijs, soort-id) values ('Cavia Hok', 'Een cavia hok lol', 40, 1);
 
-insert into accesoires (id, kleur, dier-id, prijs, accesoire-soort) values (1, 'Rood', 1, 40, 'hok');
+insert into accesoires (kleur, dier-id, prijs, accesoire-soort) values ('Rood', 1, 40, 'hok');
