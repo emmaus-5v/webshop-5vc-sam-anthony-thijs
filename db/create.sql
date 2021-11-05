@@ -11,12 +11,22 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+/*tabel goed*/
 CREATE TABLE dieren (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   soort TEXT,
   kleur TEXT,
   ras TEXT,
+  gewicht NUMERIC(10,2)
+);
+
+/*tabel goed*/
+CREATE TABLE accesoires (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur TEXT,
+  dier_soort INTEGER,
   prijs INTEGER
+  accesoire_soort TEXT
 );
 
 CREATE TABLE producten (
@@ -27,14 +37,9 @@ CREATE TABLE producten (
   soort_id INTEGER
 );
 
-CREATE TABLE accesoires (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  kleur TEXT,
-  dier_id INTEGER,
-  prijs INTEGER
-  accesoire_soort TEXT
-);
 
+
+CREATE TABLE 
 --
 -- populate with data
 --
