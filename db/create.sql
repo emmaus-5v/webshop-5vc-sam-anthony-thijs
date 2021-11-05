@@ -25,7 +25,6 @@ CREATE TABLE accesoires (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur TEXT,
   dier_soort INTEGER,
-  prijs INTEGER
   accesoire_soort TEXT
 );
 
