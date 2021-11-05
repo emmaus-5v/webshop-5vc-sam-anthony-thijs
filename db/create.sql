@@ -1,7 +1,7 @@
 --
 -- create tables
 --
-
+/*tabel goed*/
 DROP TABLE IF EXISTS products; 
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -28,6 +28,15 @@ CREATE TABLE accesoires (
   accesoire_soort TEXT
 );
 
+/*tabel goed*/
+CREATE TABLE id_tabel (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+dieren.soort INTEGER,
+diersoort TEXT,
+accesoires.dier INTEGER
+);
+
+/*tabel goed*/
 CREATE TABLE producten (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   naam TEXT
@@ -38,7 +47,7 @@ CREATE TABLE producten (
 
 
 
-CREATE TABLE 
+
 --
 -- populate with data
 --
