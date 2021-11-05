@@ -1,0 +1,41 @@
+/*tabel goed*/
+DROP TABLE IF EXISTS products; 
+CREATE TABLE products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  code VARCHAR(15),
+  name VARCHAR(255),
+  description TEXT,
+  price NUMERIC(10, 2)
+);
+
+/*tabel goed*/
+CREATE TABLE dieren (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  soort TEXT,
+  kleur TEXT,
+  ras TEXT,
+  gewicht NUMERIC(10,2)
+);
+
+/*tabel goed*/
+CREATE TABLE accesoires (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur TEXT,
+  dier_soort INTEGER,
+  accesoire_soort TEXT
+);
+
+CREATE TABLE producten (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  naam TEXT
+  beschrijving TEXT,
+  prijs INTEGER,
+  soort_id INTEGER
+);
+
+CREATE TABLE id_tabel (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+dieren.soort INTEGER,
+diersoort TEXT,
+accesoires.dier_soort INTEGER
+);
