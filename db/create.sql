@@ -24,15 +24,15 @@ CREATE TABLE producten (
   naam TEXT
   beschrijving TEXT,
   prijs INTEGER,
-  soort-id INTEGER
+  soort_id INTEGER
 );
 
 CREATE TABLE accesoires (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur TEXT,
-  dier-id INTEGER,
+  dier_id INTEGER,
   prijs INTEGER
-  accesoire-soort TEXT
+  accesoire_soort TEXT
 );
 
 --
