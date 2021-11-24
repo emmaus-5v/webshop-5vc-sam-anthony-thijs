@@ -37,6 +37,7 @@ CREATE TABLE dieren (
   soort TEXT,
   kleur TEXT,
   ras TEXT,
+  eten INTEGER,
   gewicht NUMERIC(10,2)
 );
 
@@ -50,7 +51,16 @@ CREATE TABLE accesoires (
   accesoire_soort TEXT
 );
 
+<<<<<<< HEAD
 insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('Rood', 1, 40, 'hok');
+=======
+CREATE TABLE voedsel (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  dieren_soort INTEGER
+  soort (carnivour, herbivour, omnivour) TEXT,
+  medicijnen TEXT
+)
+>>>>>>> a977b7249f94b95de278c5fcd13d6f591d3bf08d
 
 /*tabel goed*/
 CREATE TABLE id_tabel (
