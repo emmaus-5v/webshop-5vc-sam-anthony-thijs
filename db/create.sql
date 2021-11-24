@@ -11,6 +11,8 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+
+
 /*tabel goed*/
 CREATE TABLE dieren (
   id INTEGER PRIMARY KEY AUTOINCREMENT,

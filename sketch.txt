@@ -39,3 +39,9 @@ dieren.soort INTEGER,
 diersoort TEXT,
 accesoires.dier_soort INTEGER
 );
+
+DROP TABLE IF EXISTS genre; 
+CREATE TABLE genre (
+  id INTEGER PRIMARY AUTOINCREMENT
+  name VARCHAR(25)
+);
