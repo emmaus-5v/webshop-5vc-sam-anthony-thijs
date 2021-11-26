@@ -11,7 +11,7 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
-insert into products (name, description, code, price) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje.', '816905633-0', 10.5);
+insert into products (name, description, code, price) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje.', '816905633-0', 10.50);
 
 insert into products (name, description, code, price) values ('Trixie Buitenverblijf', 'Het Trixie Groot buitenverblijf met ren is een compleet verblijf voor uw konijn of cavia. Het is gemaakt van gebeitst vurenhout met stevig metalen.
 
@@ -26,7 +26,7 @@ insert into products (name, description, code, price) values (' Zacht warm cavia
 
 ❀ Afmetingen: 38x28cm.Geweldig voor hamster, Syrische hamster, gerbil of de jonge cavia, trekegel, rode eekhoorn.', '693155505-7', 7.50);
 
-insert into products (name, description, code, price) values ('Kiss for Corliss, A (Almost a Bride)', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '686928463-6', 14);
+insert into products (name, description, code, price) values ('Puppys, GOLDEN RETRIEVER', 'wil jij een Golden Retriever bestel hem dan nu voor een mooi degelijk prijsje', '686928463-6', 199.99);
 insert into products (name, description, code, price) values ('Velvet Goldmine', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
 
 Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '492662523-7', 14);
@@ -41,7 +41,8 @@ CREATE TABLE dieren (
   gewicht NUMERIC(10,2)
 );
 
-/*insert into dieren (soort, kleur, ras, gewicht) values ('Cavia', 'Zwart', 'Langhaar', 10);*/
+/*insert into dieren (soort, kleur, ras, gewicht) values ('Cavia', 'Zwart', 'Langhaar', 10);
+  insert into dieren (sooirt, kleur, ras, gewicht) values ('konijn', 'bruin', 'Nederlandse Hangoor Dwerg', 1.5);*/
 
 /*tabel goed*/
 CREATE TABLE accesoires (
@@ -51,7 +52,10 @@ CREATE TABLE accesoires (
   accesoire_soort TEXT
 );
 
-/*insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('Rood', 1, 40, 'hok');*/
+/*insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('bruinhout', 1, 125, 'hok');
+  insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('rood' 2, 5.50, 'teugel');  
+  insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('geel" 2, 2,99 'etensbak'); */
+
 
 CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
