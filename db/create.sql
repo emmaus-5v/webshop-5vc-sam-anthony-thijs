@@ -41,7 +41,7 @@ CREATE TABLE dieren (
   gewicht NUMERIC(10,2)
 );
 
-insert into dieren (soort, kleur, ras, gewicht) values ('Cavia', 'Zwart', 'Langhaar', 10);
+/*insert into dieren (soort, kleur, ras, gewicht) values ('Cavia', 'Zwart', 'Langhaar', 10);*/
 
 /*tabel goed*/
 CREATE TABLE accesoires (
@@ -51,7 +51,7 @@ CREATE TABLE accesoires (
   accesoire_soort TEXT
 );
 
-insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('Rood', 1, 40, 'hok');
+/*insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('Rood', 1, 40, 'hok');*/
 
 CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -76,7 +76,7 @@ CREATE TABLE producten (
   prijs INTEGER,
   soort_id INTEGER
 );
-insert into producten (naam, beschrijving, prijs, soort_id) values ('Cavia Hok', 'Een cavia hok lol', 40, 1);
+/*insert into producten (naam, beschrijving, prijs, soort_id) values ('Cavia Hok', 'Een cavia hok lol', 40, 1);*/
 
 
 
