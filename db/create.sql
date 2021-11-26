@@ -58,7 +58,7 @@ CREATE TABLE voedsel (
   dieren_soort INTEGER
   soort (carnivour, herbivour, omnivour) TEXT,
   medicijnen TEXT
-)
+);
 
 /*tabel goed*/
 CREATE TABLE id_tabel (
