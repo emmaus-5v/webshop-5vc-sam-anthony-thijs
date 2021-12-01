@@ -38,11 +38,20 @@ CREATE TABLE dieren (
   kleur TEXT,
   ras TEXT,
   eten INTEGER,
+  geslacht TEXT,
   gewicht NUMERIC(10,2)
 );
 
-/*insert into dieren (soort, kleur, ras, gewicht) values ('Cavia', 'Zwart', 'Langhaar', 10);
-  insert into dieren (sooirt, kleur, ras, gewicht) values ('konijn', 'bruin', 'Nederlandse Hangoor Dwerg', 1.5);*/
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Cavia', 'Zwart', 'Langhaar',   'Mannetje', 1);
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Konijn', 'bruin', 'Nederlandse Hangoor Dwerg',   'Vrouwtje', 5);
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Hond', 'bruin', 'Labrador',   'Mannetje', 12);
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Goudvis', 'Oranje', 'nvt',   'nvt', 0.1);
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Grasparkiet', 'Citroengeel',   'nvt', 'Mannetje', 0.4);
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Capybara', 'Bruin', 'nvt', 'Mannetje', 40);
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Sprinkhaan', 'Groen', 'nvt',   'Vrouwtje', 0,07);
+insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Kat', 'Grijs', 'Britse Langhaar', 'Vrouwtje', 10);
+
+
 
 /*tabel goed*/
 CREATE TABLE accesoires (
