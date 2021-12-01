@@ -60,16 +60,16 @@ CREATE TABLE accesoires (
 CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   dieren_soort INTEGER
-  soort (carnivour, herbivour, omnivour) TEXT,
+  soort TEXT
   medicijnen TEXT
 );
 
 /*tabel goed*/
 CREATE TABLE id_tabel (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
-dieren.soort INTEGER,
+dieren_soort INTEGER,
 diersoort TEXT,
-accesoires.dier INTEGER
+accesoires_dier INTEGER
 );
 
 /*tabel goed*/
