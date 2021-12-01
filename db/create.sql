@@ -73,14 +73,15 @@ diersoort TEXT,
 accesoires_dier INTEGER
 );
 
-/*tabel goed*/
+/*tabel goed
 CREATE TABLE producten (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   naam TEXT
   beschrijving TEXT,
   prijs INTEGER,
   soort_id INTEGER
-);
+);*/
+
 /*insert into producten (naam, beschrijving, prijs, soort_id) values ('Cavia Hok', 'Een cavia hok lol', 40, 1);*/
 
 
