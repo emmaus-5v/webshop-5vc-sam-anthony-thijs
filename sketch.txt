@@ -49,3 +49,45 @@ CREATE TABLE genre (
 
 
 
+
+DROP TABLE IF EXISTS products; 
+CREATE TABLE products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  code VARCHAR(15),
+  name VARCHAR(255),
+  description TEXT,
+  price NUMERIC(10, 2)
+);
+
+CREATE TABLE dieren (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  soort TEXT,
+  kleur TEXT,
+  ras TEXT,
+  eten INTEGER,
+  geslacht TEXT,
+  gewicht NUMERIC(10,2),
+  code INTEGER
+);
+
+CREATE TABLE accesoires (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur TEXT,
+  dier_soort INTEGER,
+  accesoire_soort TEXT,
+  code INTEGER
+);
+
+CREATE TABLE voedsel (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  soort TEXT,
+  medicijnen TEXT,
+  code INTEGER
+);
+
+CREATE TABLE id_tabel (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+dieren_soort TEXT,
+voedsel_id INTEGER,
+accesoires_dier INTEGER
+);

@@ -50,7 +50,6 @@ insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Sprinkhaan', 
 insert into dieren (soort, kleur, ras, geslacht, gewicht) values ('Kat', 'Grijs', 'Britse Langhaar', 'Vrouwtje', 10);
 
 
-
 /*tabel goed*/
 CREATE TABLE accesoires (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -66,16 +65,15 @@ CREATE TABLE accesoires (
 
 CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  dieren_soort INTEGER
-  soort TEXT
+  soort TEXT,
   medicijnen TEXT
 );
 
 /*tabel goed*/
 CREATE TABLE id_tabel (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
-dieren_soort INTEGER,
-diersoort TEXT,
+dieren_soort TEXT,
+dieren_eten INTEGER,
 accesoires_dier INTEGER
 );
 
