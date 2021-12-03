@@ -9,8 +9,18 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2)
+  soort TEXT,
+  kleur TEXT,
+  ras TEXT,
+  geslacht INTEGER,
+  gewicht NUMERIC(10,2),
+  code VARCHAR(15),
 );
 
+CREATE TABLE geslachttabel (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  geslacht TEXT
+)
 /*insert into products (name, description, code, price) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje.', '816905633-0', 10.50);
 
 insert into products (name, description, code, price) values ('Trixie Buitenverblijf', 'Het Trixie Groot buitenverblijf met ren is een compleet verblijf voor uw konijn of cavia. Het is gemaakt van gebeitst vurenhout met stevig metalen.
@@ -29,6 +39,7 @@ insert into products (name, description, code, price) values (' Zacht warm cavia
 insert into products (name, description, code, price) values ('Puppys, GOLDEN RETRIEVER', 'Wil jij een Golden Retriever bestel hem dan nu voor een mooi degelijk prijsje', '686928463-6', 199.99);
 insert into products (name, description, code, price) values ('Goudvis', 'Heeft u nou altijd al een goudvis willen hebben dat kan dan nu voor een mooi zacht prijsje.', '492662523-7', 8.99);
 */
+
 /*tabel goed*/
 CREATE TABLE dieren (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,7 +50,8 @@ CREATE TABLE dieren (
   gewicht NUMERIC(10,2),
   product_id INTEGER
 );
-*/
+
+/*
 insert into dieren (soort, kleur, ras, geslacht, gewicht, product_id) values ('Cavia', 'Zwart', 'Langhaar', 'Mannetje', 1, 1);
 insert into dieren (soort, kleur, ras, geslacht, gewicht, product_id) values ('Konijn', 'bruin', 'Nederlandse Hangoor Dwerg', 'Vrouwtje', 5, 2);
 insert into dieren (soort, kleur, ras, geslacht, gewicht, product_id) values ('Hond', 'bruin', 'Labrador', 'Mannetje', 12, 3);
@@ -55,7 +67,6 @@ CREATE TABLE accesoires (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur TEXT,
   soort TEXT,
-  product_id INTEGER
 );
 
 /*insert into accesoires (kleur, dier-id, prijs, accesoire_soort) values ('bruinhout', 1, 125, 'hok');
@@ -66,7 +77,6 @@ CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   soort TEXT,
   medicijnen TEXT,
-  product_id INTEGER
 );
 
 /*tabel goed*/
@@ -74,7 +84,7 @@ CREATE TABLE id_tabel (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 dieren_soort TEXT,
 voedsel_id INTEGER,
-accesoires_dier INTEGER
+accesoires_id INTEGER
 );
 
 /*tabel goed
