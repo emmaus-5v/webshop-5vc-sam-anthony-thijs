@@ -17,7 +17,7 @@ CREATE TABLE dieren (
   diersoort TEXT,
   kleur TEXT,
   ras TEXT,
-  geslacht TEXT,
+  geslacht INTEGER,
   gewicht NUMERIC(10,2),
   product_id INTEGER
 );
@@ -82,7 +82,6 @@ insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values
 insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Capybara', 'Bruin', 'nvt', 1, 40, 6);
 insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Sprinkhaan', 'Groen', 'nvt', 2, 0.07, 7);
 insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Kat', 'Grijs', 'Britse Langhaar', 2, 10, 8);
-
 
 insert into accesoires (kleur, soort, product_id) values ('bruinhout', 'verblijf', 9);
 insert into accesoires (kleur, soort, product_id) values ('rood', 'speeltje', 10);  

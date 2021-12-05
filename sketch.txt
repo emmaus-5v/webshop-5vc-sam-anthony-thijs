@@ -1,4 +1,4 @@
-/*tabel goed*/
+/*tabel goed
 DROP TABLE IF EXISTS products; 
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -214,4 +214,4 @@ id INTEGER PRIMARY KEY AUTOINCREMENT,
 dieren_soort TEXT,
 voedsel_id INTEGER,
 accesoires_id INTEGER
-);
+);*/
