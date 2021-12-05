@@ -32,7 +32,7 @@ CREATE TABLE accesoires (
 /*hoeveelheid in kg*/
 CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  voedselsoort TEXT,
+  voedselsoort INTEGER,
   merk TEXT,
   hoeveelheid INTEGER,
   product_id INTEGER
@@ -43,6 +43,16 @@ id INTEGER PRIMARY KEY AUTOINCREMENT,
 dieren_soort TEXT,
 voedsel_id INTEGER,
 accesoires_id INTEGER
+);
+
+CREATE TABLE voedselsoorten (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+naam TEXT
+);
+
+CREATE TABLE geslachten (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+naam TEXT
 );
 
 insert into products (name, description, code, price) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje.', '816905633-0', 10.50);
@@ -64,14 +74,14 @@ insert into products (name, description, code, price) values ('Puppys, GOLDEN RE
 insert into products (name, description, code, price) values ('Goudvis', 'Heeft u nou altijd al een goudvis willen hebben dat kan dan nu voor een mooi zacht prijsje.', '492662523-7', 8.99);
 
 
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Cavia', 'Zwart', 'Langhaar', 'Mannetje', 1, 1);
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Konijn', 'bruin', 'Nederlandse Hangoor Dwerg', 'Vrouwtje', 5, 2);
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Hond', 'bruin', 'Labrador', 'Mannetje', 12, 3);
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Goudvis', 'Oranje', 'nvt', 'nvt', 0.1, 4);
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Grasparkiet', 'Citroengeel', 'nvt', 'Mannetje', 0.4, 5);
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Capybara', 'Bruin', 'nvt', 'Mannetje', 40, 6);
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Sprinkhaan', 'Groen', 'nvt', 'Vrouwtje', 0.07, 7);
-insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Kat', 'Grijs', 'Britse Langhaar', 'Vrouwtje', 10, 8);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Cavia', 'Zwart', 'Langhaar', 1, 1, 1);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Konijn', 'bruin', 'Nederlandse Hangoor Dwerg', 2, 5, 2);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Hond', 'bruin', 'Labrador', 1, 12, 3);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Goudvis', 'Oranje', 'nvt', 3, 0.1, 4);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Grasparkiet', 'Citroengeel', 'nvt', 1, 0.4, 5);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Capybara', 'Bruin', 'nvt', 1, 40, 6);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Sprinkhaan', 'Groen', 'nvt', 2, 0.07, 7);
+insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Kat', 'Grijs', 'Britse Langhaar', 2, 10, 8);
 
 
 insert into accesoires (kleur, soort, product_id) values ('bruinhout', 'verblijf', 9);
@@ -83,14 +93,24 @@ insert into accesoires (kleur, soort, product_id) values ('oranje', 'kleding', 1
 insert into accesoires (kleur, soort, product_id) values ('wit', 'speeltje', 15);
 insert into accesoires (kleur, soort, product_id) values ('rood', 'verblijf', 16);  
 
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('vlees', 'campina', 1, 17);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('droogvoer', 'felix', 2, 18);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('groenvoer', 'beaphar', 0.20, 19);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('snack', 'shell', 0.55, 20);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('brokken', 'felix', 1, 21);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('droogvoer', 'bunny nature', 2, 22);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('groenvoer', 'campina', 0.20, 23);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values ('snack', 'complete', 0.55, 24);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (5, 'campina', 1, 17);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (1, 'felix', 2, 18);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'beaphar', 0.20, 19);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'shell', 0.55, 20);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (4, 'felix', 1, 21);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (1, 'bunny nature', 2, 22);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'campina', 0.20, 23);
+insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'complete', 0.55, 24);
+
+insert into voedselsoorten (naam) values ('droogvoer');
+insert into voedselsoorten (naam) values ('groenvoer');
+insert into voedselsoorten (naam) values ('snack');
+insert into voedselsoorten (naam) values ('brokken');
+insert into voedselsoorten (naam) values ('vlees');
+
+insert into geslachten (naam) values ('mannetje');
+insert into geslachten (naam) values ('vrouwtje');
+insert into geslachten (naam) values ('nvt');
 
 /*tabel goed
 CREATE TABLE producten (
