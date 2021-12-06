@@ -12,16 +12,18 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+DROP TABLE IF EXISTS dieren;
 CREATE TABLE dieren (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   diersoort TEXT,
   kleur TEXT,
   ras TEXT,
   geslacht INTEGER,
-  gewicht NUMERIC(10,2),
+  gewicht NUMERIC(10, 2),
   product_id INTEGER
 );
 
+DROP TABLE IF EXISTS accesoires;
 CREATE TABLE accesoires (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur TEXT,
@@ -30,6 +32,7 @@ CREATE TABLE accesoires (
 );
 
 /*hoeveelheid in kg*/
+DROP TABLE IF EXISTS voedsel;
 CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   voedselsoort INTEGER,
@@ -38,6 +41,7 @@ CREATE TABLE voedsel (
   product_id INTEGER
 );
 
+DROP TABLE IF EXISTS id_tabel;
 CREATE TABLE id_tabel (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 dieren_soort TEXT,
@@ -45,11 +49,13 @@ voedsel_id INTEGER,
 accesoires_id INTEGER
 );
 
+DROP TABLE IF EXISTS voedselsoorten;
 CREATE TABLE voedselsoorten (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 naam TEXT
 );
 
+DROP TABLE IF EXISTS geslachten;
 CREATE TABLE geslachten (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 naam TEXT
