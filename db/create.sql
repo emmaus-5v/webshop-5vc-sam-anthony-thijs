@@ -26,8 +26,9 @@ CREATE TABLE dieren (
 DROP TABLE IF EXISTS accesoires;
 CREATE TABLE accesoires (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  naam TEXT,
   kleur TEXT,
-  soort TEXT,
+  soort INTEGER,
   product_id INTEGER
 );
 
@@ -57,6 +58,12 @@ naam TEXT
 
 DROP TABLE IF EXISTS geslachten;
 CREATE TABLE geslachten (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+naam TEXT
+);
+
+DROP TABLE IF EXISTS accesoiresoorten;
+CREATE TABLE accesoiresoorten (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 naam TEXT
 );
@@ -91,14 +98,14 @@ insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values
 insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Sprinkhaan', 'Groen', 'nvt', 2, 0.07, 7);
 insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Kat', 'Grijs', 'Britse Langhaar', 2, 10, 8);
 
-insert into accesoires (kleur, soort, product_id) values ('bruinhout', 'verblijf', 9);
-insert into accesoires (kleur, soort, product_id) values ('rood', 'speeltje', 10);  
-insert into accesoires (kleur, soort, product_id) values ('geel', 'kleding', 11); 
-insert into accesoires (kleur, soort, product_id) values ('blauw', 'verblijf', 12);
-insert into accesoires (kleur, soort, product_id) values ('groen', 'speeltje', 13);  
-insert into accesoires (kleur, soort, product_id) values ('oranje', 'kleding', 14); 
-insert into accesoires (kleur, soort, product_id) values ('wit', 'speeltje', 15);
-insert into accesoires (kleur, soort, product_id) values ('rood', 'verblijf', 16);  
+insert into accesoires (naam, kleur, soort, product_id) values ('caviahok', 'bruinhout', 1, 9);
+insert into accesoires (naam, kleur, soort, product_id) values ('bal', 'rood', 2, 10);  
+insert into accesoires (naam, kleur, soort, product_id) values ('trui', 'geel', 3, 11); 
+insert into accesoires (naam, kleur, soort, product_id) values ('hondenhuis', 'blauw', 1, 12);
+insert into accesoires (naam, kleur, soort, product_id) values ('brocolliknuffel', 'groen', 2, 13);  
+insert into accesoires (naam, kleur, soort, product_id) values ('WK trui', 'oranje', 3, 14); 
+insert into accesoires (naam, kleur, soort, product_id) values ('muis aan hengel', 'wit', 2, 15);
+insert into accesoires (naam, kleur, soort, product_id) values ('kattenmand', 'rood', 1, 16);  
 
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (5, 'campina', 1, 17);
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (1, 'felix', 2, 18);
@@ -118,6 +125,10 @@ insert into voedselsoorten (naam) values ('vlees');
 insert into geslachten (naam) values ('mannetje');
 insert into geslachten (naam) values ('vrouwtje');
 insert into geslachten (naam) values ('nvt');
+
+insert into accesoiresoorten (naam) values ('verblijf');
+insert into accesoiresoorten (naam) values ('speeltje');
+insert into accesoiresoorten (naam) values ('kleding');
 
 /*tabel goed
 CREATE TABLE producten (
