@@ -78,7 +78,9 @@ insert into products (name, description, code, price) values (' Zacht warm cavia
 
 insert into products (name, description, code, price) values ('Puppys, GOLDEN RETRIEVER', 'Wil jij een Golden Retriever bestel hem dan nu voor een mooi degelijk prijsje', '686928463-6', 199.99);
 insert into products (name, description, code, price) values ('Goudvis', 'Heeft u nou altijd al een goudvis willen hebben dat kan dan nu voor een mooi zacht prijsje.', '492662523-7', 8.99);
-
+insert into products (name, description, code, price) values ('gert', 'gert de Grote', '2353465564-2', 6.90);
+insert into products (name, description, code, price) values ('gert', 'gert de Grote', '2353465564-2', 6.90);
+insert into products (name, description, code, price) values ('gert', 'gert de Grote', '2353465564-2', 6.90);
 
 insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Cavia', 'Zwart', 'Langhaar', 1, 1, 1);
 insert into dieren (diersoort, kleur, ras, geslacht, gewicht, product_id) values ('Konijn', 'bruin', 'Nederlandse Hangoor Dwerg', 2, 5, 2);
