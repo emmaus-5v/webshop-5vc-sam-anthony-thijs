@@ -117,6 +117,8 @@ insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'Al
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'Complete', 0.55, 24);
 
 
+
+
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 2, 1);
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 3, 1);
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 7, 1);
@@ -139,6 +141,8 @@ insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 6);
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (4, 4, NULL);
 
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (5, 3, 7);
+
+
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (6, 3, 7);
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (7, 3, 7);
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 3, 7);
