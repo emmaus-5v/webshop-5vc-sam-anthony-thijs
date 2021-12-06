@@ -116,6 +116,9 @@ insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (1, 'bu
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'campina', 0.20, 23);
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'complete', 0.55, 24);
 
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (5, 3, 7);
+
+
 insert into voedselsoorten (naam) values ('droogvoer');
 insert into voedselsoorten (naam) values ('groenvoer');
 insert into voedselsoorten (naam) values ('snack');
@@ -129,17 +132,6 @@ insert into geslachten (naam) values ('nvt');
 insert into accesoiresoorten (naam) values ('verblijf');
 insert into accesoiresoorten (naam) values ('speeltje');
 insert into accesoiresoorten (naam) values ('kleding');
-
-/*tabel goed
-CREATE TABLE producten (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  naam TEXT
-  beschrijving TEXT,
-  prijs INTEGER,
-  soort_id INTEGER
-);*/
-
-/*insert into producten (naam, beschrijving, prijs, soort_id) values ('Cavia Hok', 'Een cavia hok lol', 40, 1);*/
 
 
 
