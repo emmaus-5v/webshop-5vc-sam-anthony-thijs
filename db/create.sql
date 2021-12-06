@@ -45,7 +45,7 @@ CREATE TABLE voedsel (
 DROP TABLE IF EXISTS id_tabel;
 CREATE TABLE id_tabel (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
-dieren_soort TEXT,
+dieren_soort INTEGER,
 voedsel_id INTEGER,
 accesoires_id INTEGER
 );
@@ -117,7 +117,6 @@ insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'ca
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'complete', 0.55, 24);
 
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (5, 3, 7);
-
 
 insert into voedselsoorten (naam) values ('droogvoer');
 insert into voedselsoorten (naam) values ('groenvoer');
