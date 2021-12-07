@@ -140,12 +140,17 @@ insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 6);
 
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (4, 4, NULL);
 
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (5, 3, 7);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (5, 3, NULL);
 
 
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (6, 3, 7);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (7, 3, 7);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 3, 7);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (6, 7, NULL);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (7, NULL, NULL);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 2, 8);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 1, 8);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 2, 7);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 1, 7);
 
 
 insert into voedselsoorten (naam) values ('droogvoer');
