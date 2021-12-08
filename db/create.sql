@@ -76,11 +76,11 @@ naam TEXT
 
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje.', '816905633-0', 10.50, 'Cavia', 'Zwart', 'Langhaar', 1, 1);
 
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Trixie Buitenverblijf', 'Het Trixie Groot buitenverblijf met ren is een compleet verblijf voor uw konijn of cavia. Het is gemaakt van gebeitst vurenhout met stevig metalen.
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('konijn', 'Het Trixie Groot buitenverblijf met ren is een compleet verblijf voor uw konijn of cavia. Het is gemaakt van gebeitst vurenhout met stevig metalen.
 
 Het verblijf bestaat uit twee verdiepingen met beneden een ren en schuilplek. Door de kunststof uitschuiflade is het hok makkelijk te verschonen.', '445924201-X', 249.60, 'Konijn', 'bruin', 'Nederlandse Hangoor Dwerg', 2, 5);
 
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values (' Zacht warm cavia bed konijnenbed, hamsterbed slaapzak, dikke fleece klein huisdier nest gezellig schuilkussen voor Chinchilla egel fret konijn (38x28cm, grijs)', ' Gemaakt van hoogwaardige stoffen, geeft je huisdier een comfortabele woonomgeving.
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('labrador', 'Zacht warm cavia bed konijnenbed, hamsterbed slaapzak, dikke fleece klein huisdier nest gezellig schuilkussen voor Chinchilla egel fret konijn (38x28cm, grijs) Gemaakt van hoogwaardige stoffen, geeft je huisdier een comfortabele woonomgeving.
 ❀ De slaapzak is aan één kant open en biedt een veilige omgeving om je huisdieren veilig te houden tijdens het rusten.
 
 ❀ Het hele huisdierbed kan met de hand of voorzichtig met de machine worden gewassen en het huisdierbed kan regelmatig worden gereinigd.
@@ -89,11 +89,11 @@ insert into products (name, description, code, price, diersoort, kleur, ras, ges
 
 ❀ Afmetingen: 38x28cm. Geweldig voor hamster, Syrische hamster, gerbil of de jonge cavia, trekegel, rode eekhoorn.', '693155505-7', 7.50, 'Hond', 'bruin', 'Labrador', 1, 12);
 
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Puppys, GOLDEN RETRIEVER', 'Wil jij een Golden Retriever bestel hem dan nu voor een mooi degelijk prijsje', '686928463-6', 199.99, 'Goudvis', 'Oranje', 'nvt', 3, 0.1);
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Goudvis', 'Heeft u nou altijd al een goudvis willen hebben dat kan dan nu voor een mooi zacht prijsje.', '492662523-7', 8.99, 'Grasparkiet', 'Citroengeel', 'nvt', 1, 0.4);
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('gert', 'gert de Grote', '2353465564-2', 6.90, 'Capybara', 'Bruin', 'nvt', 1, 40);
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('gert', 'gert de Grote', '2353465564-2', 6.90, 'Sprinkhaan', 'Groen', 'nvt', 2, 0.07);
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('gert', 'gert de Grote', '2353465564-2', 6.90, 'Kat', 'Grijs', 'Britse Langhaar', 2, 10);
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('goudvis', 'Wil jij een Golden Retriever bestel hem dan nu voor een mooi degelijk prijsje', '686928463-6', 199.99, 'Goudvis', 'Oranje', 'nvt', 3, 0.1);
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('grasparkiet', 'Heeft u nou altijd al een goudvis willen hebben dat kan dan nu voor een mooi zacht prijsje.', '492662523-7', 8.99, 'Grasparkiet', 'Citroengeel', 'nvt', 1, 0.4);
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('capybara', 'gert de Grote', '2353465564-2', 6.90, 'Capybara', 'Bruin', 'nvt', 1, 40);
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('sprinkhaan', 'gert de Grote', '2353465564-2', 6.90, 'Sprinkhaan', 'Groen', 'nvt', 2, 0.07);
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('kat', 'gert de Grote', '2353465564-2', 6.90, 'Kat', 'Grijs', 'Britse Langhaar', 2, 10);
 
 insert into accesoires (naam, kleur, soort, product_id) values ('caviahok', 'bruinhout', 1, 9);
 insert into accesoires (naam, kleur, soort, product_id) values ('bal', 'rood', 2, 10);  
