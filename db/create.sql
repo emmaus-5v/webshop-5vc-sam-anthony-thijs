@@ -48,11 +48,25 @@ CREATE TABLE voedsel (
   product_id INTEGER
 );
 
-DROP TABLE IF EXISTS id_tabel;
+/*DROP TABLE IF EXISTS id_tabel;
 CREATE TABLE id_tabel (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
 dieren_soort INTEGER,
 voedsel_id INTEGER,
+accesoires_id INTEGER
+);*/
+
+DROP TABLE IF EXISTS voedselId_tabel;
+CREATE TABLE voedselId_tabel (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+dieren_soort INTEGER,
+voedsel_id INTEGER
+);
+
+DROP TABLE IF EXISTS accesoireId_tabel;
+CREATE TABLE accesoireId_tabel (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+dieren_soort INTEGER,
 accesoires_id INTEGER
 );
 
@@ -83,6 +97,7 @@ insert into products (name, description, code, price, diersoort, kleur, ras, ges
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('sprinkhaan', 'Heeft u altijd al een sprinkhaan gewild dan is dit uw kans.', '2353465564-2', 1.50, 'Sprinkhaan', 'Groen', 'nvt', 2, 0.07);
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('kat', 'Heeft u altijd al een schattig chagerijninge kat gewild dan is dit uw kans om een britse langhaar te verkrijgen (150 euro zonder vaccinaties en 350 euro met vacinaties.).', '2353465564-2', 150.00 350.00, 'Kat', 'Grijs', 'Britse Langhaar', 2, 10);
 
+
 insert into accesoires (naam, kleur, soort, product_id) values ('caviahok', 'bruinhout', 1, 9);
 insert into accesoires (naam, kleur, soort, product_id) values ('bal', 'rood', 2, 10);  
 insert into accesoires (naam, kleur, soort, product_id) values ('trui', 'geel', 3, 11); 
@@ -91,6 +106,7 @@ insert into accesoires (naam, kleur, soort, product_id) values ('brocolliknuffel
 insert into accesoires (naam, kleur, soort, product_id) values ('WK trui', 'oranje', 3, 14); 
 insert into accesoires (naam, kleur, soort, product_id) values ('muis aan hengel', 'wit', 2, 15);
 insert into accesoires (naam, kleur, soort, product_id) values ('kattenmand', 'rood', 1, 16);  
+
 
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (5, 'Carnibest', 1, 17);
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (1, 'Felix', 2, 18);
@@ -102,37 +118,40 @@ insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'Al
 insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'Complete', 0.55, 24);
 
 
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 2, 1);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 3, 1);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 7, 1);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (1, 2);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (1, 3);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (1, 7);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (2, 2);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (2, 3);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (2, 7);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (3, 1);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (3, 4);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (4, 4);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (5, 3);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (6, 7);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (7, NULL);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (8, 1);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (8, 2);
 
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (2, 2, 1);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (2, 3, 1);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (2, 7, 1);
 
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 2);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 3);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 4);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 5);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 6);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 2);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 3);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 4);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 5);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 6);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (1, 1);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (1, 1);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (1, 1);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (2, 1);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (2, 1);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (2, 1);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (3, 2);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (3, 3);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (3, 4);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (3, 5);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (3, 6);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (4, NULL);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (5, NULL);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (6, NULL);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (7, NULL);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (8, 8);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (8, 7);
 
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (4, 4, NULL);
-
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (5, 3, NULL);
-
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (6, 7, NULL);
-
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (7, NULL, NULL);
-
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 2, 8);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 1, 8);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 2, 7);
-insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 1, 7);
 
 insert into voedselsoorten (naam) values ('droogvoer');
 insert into voedselsoorten (naam) values ('groenvoer');
