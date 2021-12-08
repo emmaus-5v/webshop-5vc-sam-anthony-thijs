@@ -215,3 +215,65 @@ dieren_soort TEXT,
 voedsel_id INTEGER,
 accesoires_id INTEGER
 );*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 2, 1);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 3, 1);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (1, 7, 1);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (2, 2, 1);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (2, 3, 1);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (2, 7, 1);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 2);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 3);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 4);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 5);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 1, 6);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 2);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 3);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 4);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 5);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (3, 4, 6);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (4, 4, NULL);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (5, 3, NULL);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (6, 7, NULL);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (7, NULL, NULL);
+
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 2, 8);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 1, 8);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 2, 7);
+insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 1, 7);*/
+
+
