@@ -98,24 +98,24 @@ insert into products (name, description, code, price, diersoort, kleur, ras, ges
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('kat', 'Heeft u altijd al een schattig chagerijninge kat gewild dan is dit uw kans om een britse langhaar te verkrijgen (150 euro zonder vaccinaties en 350 euro met vacinaties.).', '2353465564-2', 150.00, 'Kat', 'Grijs', 'Britse Langhaar', 2, 10);
 
 
-insert into accesoires (naam, kleur, soort, product_id) values ('caviahok', 'bruinhout', 1, 9);
-insert into accesoires (naam, kleur, soort, product_id) values ('bal', 'rood', 2, 10);  
-insert into accesoires (naam, kleur, soort, product_id) values ('trui', 'geel', 3, 11); 
-insert into accesoires (naam, kleur, soort, product_id) values ('hondenhuis', 'blauw', 1, 12);
-insert into accesoires (naam, kleur, soort, product_id) values ('brocolliknuffel', 'groen', 2, 13);  
-insert into accesoires (naam, kleur, soort, product_id) values ('WK trui', 'oranje', 3, 14); 
-insert into accesoires (naam, kleur, soort, product_id) values ('muis aan hengel', 'wit', 2, 15);
-insert into accesoires (naam, kleur, soort, product_id) values ('kattenmand', 'rood', 1, 16);  
+insert into accesoires (naam, kleur, soort) values ('caviahok', 'bruinhout', 1);
+insert into accesoires (naam, kleur, soort) values ('bal', 'rood', 2);  
+insert into accesoires (naam, kleur, soort) values ('trui', 'geel', 3); 
+insert into accesoires (naam, kleur, soort) values ('hondenhuis', 'blauw', 1);
+insert into accesoires (naam, kleur, soort) values ('brocolliknuffel', 'groen', 2);  
+insert into accesoires (naam, kleur, soort) values ('WK trui', 'oranje', 3); 
+insert into accesoires (naam, kleur, soort) values ('muis aan hengel', 'wit', 2);
+insert into accesoires (naam, kleur, soort) values ('kattenmand', 'rood', 1);  
 
 
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (5, 'Carnibest', 1, 17);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (1, 'Felix', 2, 18);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'Beaphar', 0.20, 19);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'Pedigree', 0.55, 20);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (4, 'Tetra', 0.01, 21);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (1, 'Bunny Nature', 2, 22);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (2, 'Albert Heijn', 0.20, 23);
-insert into voedsel (voedselsoort, merk, hoeveelheid, product_id) values (3, 'Complete', 0.55, 24);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (5, 'Carnibest', 1);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (1, 'Felix', 2);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (2, 'Beaphar', 0.20);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (3, 'Pedigree', 0.55);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (4, 'Tetra', 0.01);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (1, 'Bunny Nature', 2);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (2, 'Albert Heijn', 0.20);
+insert into voedsel (voedselsoort, merk, hoeveelheid) values (3, 'Complete', 0.55);
 
 
 insert into voedselId_tabel (dieren_soort, voedsel_id) values (1, 2);
