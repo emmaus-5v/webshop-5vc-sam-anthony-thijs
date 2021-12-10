@@ -34,8 +34,7 @@ CREATE TABLE accesoires (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   naam TEXT,
   kleur TEXT,
-  soort INTEGER,
-  product_id INTEGER
+  soort INTEGER
 );
 
 /*hoeveelheid in kg*/

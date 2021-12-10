@@ -237,7 +237,7 @@ accesoires_id INTEGER
 
 
 
-SELECT * FROM products JOIN voedselId_tabel ON products.id  = voedselId_tabel.dieren_soort JOIN voedsel ON voedselId_tabel.voedsel_id = voedsel.id;
+SELECT * FROM products JOIN voedselId_tabel ON products.id  = voedselId_tabel.dieren_soort JOIN voedsel ON voedselId_tabel.voedsel_id = voedsel.id JOIN voedselsoorten ON voedsel.voedselsoort = voedselsoorten.id;
 
 
 
