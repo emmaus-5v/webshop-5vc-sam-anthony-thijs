@@ -55,6 +55,7 @@
               <!--<<li><span class="propert-name">Code: </span><span class="product_code"></span></li>-->
               <!--<li><span class="propert-name">Diersoort: </span><span class="product_diersoort"></span></li>-->
               <li><span class="propert-name">Kleur: </span><span class="product_kleur"></span></li>
+              <li><span class="propert-name">Geslacht: </span><span class="product_geslacht"></span></li>
               <li><span class="propert-name">Ras: </span><span class="product_ras"></span></li>
               <li><span class="propert-name">Gewicht: </span><span class="product_gewicht"></span></li>
             </ul>
@@ -94,6 +95,7 @@
 			        // clone.querySelector(".product_code").textContent = product.code
                 clone.querySelector(".product_id").value = product.id
 			          clone.querySelector(".product_kleur").textContent = product.kleur
+                clone.querySelector(".product_geslacht").textContent = product.g_naam
 			          clone.querySelector(".product_ras").textContent = product.ras
                 clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
                 clone.querySelector(".product_image").src =`/images/${product.id}.jpg`

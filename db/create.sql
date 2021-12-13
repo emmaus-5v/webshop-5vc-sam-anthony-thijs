@@ -33,7 +33,7 @@ DROP TABLE IF EXISTS accesoires;
 CREATE TABLE accesoires (
   a_id INTEGER PRIMARY KEY AUTOINCREMENT,
   a_naam TEXT,
-  kleur TEXT,
+  a_kleur TEXT,
   soort INTEGER
 );
 
@@ -96,14 +96,14 @@ insert into products (name, description, code, price, diersoort, kleur, ras, ges
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Kat', 'Heeft u altijd al een schattig chagerijninge kat gewild dan is dit uw kans om een britse langhaar te verkrijgen (150 euro zonder vaccinaties en 350 euro met vacinaties.).', '2353465564-2', 150.00, 'Kat', 'Grijs', 'Britse Langhaar', 2, 10);
 
 
-insert into accesoires (a_naam, kleur, soort) values ('caviahok', 'bruinhout', 1);
-insert into accesoires (a_naam, kleur, soort) values ('bal', 'rood', 2);  
-insert into accesoires (a_naam, kleur, soort) values ('trui', 'geel', 3); 
-insert into accesoires (a_naam, kleur, soort) values ('hondenhuis', 'blauw', 1);
-insert into accesoires (a_naam, kleur, soort) values ('brocolliknuffel', 'groen', 2);  
-insert into accesoires (a_naam, kleur, soort) values ('WK trui', 'oranje', 3); 
-insert into accesoires (a_naam, kleur, soort) values ('muis aan hengel', 'wit', 2);
-insert into accesoires (a_naam, kleur, soort) values ('kattenmand', 'rood', 1);  
+insert into accesoires (a_naam, a_kleur, soort) values ('caviahok', 'bruinhout', 1);
+insert into accesoires (a_naam, a_kleur, soort) values ('bal', 'rood', 2);  
+insert into accesoires (a_naam, a_kleur, soort) values ('trui', 'geel', 3); 
+insert into accesoires (a_naam, a_kleur, soort) values ('hondenhuis', 'blauw', 1);
+insert into accesoires (a_naam, a_kleur, soort) values ('brocolliknuffel', 'groen', 2);  
+insert into accesoires (a_naam, a_kleur, soort) values ('WK trui', 'oranje', 3); 
+insert into accesoires (a_naam, a_kleur, soort) values ('muis aan hengel', 'wit', 2);
+insert into accesoires (a_naam, a_kleur, soort) values ('kattenmand', 'rood', 1);  
 
 
 insert into voedsel (voedselsoort, merk, hoeveelheid) values (5, 'Carnibest', 1);
