@@ -73,7 +73,7 @@ function getProducts(request, response) {
     const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY id ASC')
     data = sqlOpdracht.all(category_id)
   } else {
-    const sqlOpdracht = db.prepare('SELECT * FROM products ORDER BY name ASC')
+    const sqlOpdracht = db.prepare('SELECT products.name, products.diersoort, products.kleur, products.ras, products.gewicht, products.code, products.description, products.price, geslachten.naam, accesoires.naam, accesoires.kleur, accesoiresoorten.naam, voedselsoorten.naam, voedsel.merk, voedsel.hoeveelheid FROM products JOIN accesoireId_tabel ON products.id = accesoireId_tabel.dieren_soort JOIN accesoires ON accesoireId_tabel.accesoires_id = accesoires.id JOIN accesoiresoorten ON accesoires.soort = accesoiresoorten.id JOIN geslachten ON products.geslacht = geslachten.id JOIN voedselId_tabel ON products.id  = voedselId_tabel.dieren_soort JOIN voedsel ON voedselId_tabel.voedsel_id = voedsel.id JOIN voedselsoorten ON voedsel.voedselsoort = voedselsoorten.id')
     data = sqlOpdracht.all()
   }
   // console.log(JSON.stringify(data, null, 2))

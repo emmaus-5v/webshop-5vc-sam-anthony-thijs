@@ -43,8 +43,7 @@ CREATE TABLE voedsel (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   voedselsoort INTEGER,
   merk TEXT,
-  hoeveelheid INTEGER,
-  product_id INTEGER
+  hoeveelheid INTEGER
 );
 
 /*DROP TABLE IF EXISTS id_tabel;
