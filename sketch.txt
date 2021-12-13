@@ -49,7 +49,7 @@ CREATE TABLE genre (
 
 
 
-
+GROUP BY products.diersoort
 
 
 
