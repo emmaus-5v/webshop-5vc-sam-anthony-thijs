@@ -32,7 +32,7 @@ CREATE TABLE dieren (
 DROP TABLE IF EXISTS accesoires;
 CREATE TABLE accesoires (
   a_id INTEGER PRIMARY KEY AUTOINCREMENT,
-  naam TEXT,
+  a_naam TEXT,
   kleur TEXT,
   soort INTEGER
 );
@@ -71,19 +71,19 @@ accesoires_id INTEGER
 DROP TABLE IF EXISTS voedselsoorten;
 CREATE TABLE voedselsoorten (
 vs_id INTEGER PRIMARY KEY AUTOINCREMENT,
-naam TEXT
+vs_naam TEXT
 );
 
 DROP TABLE IF EXISTS geslachten;
 CREATE TABLE geslachten (
 g_id INTEGER PRIMARY KEY AUTOINCREMENT,
-naam TEXT
+g_naam TEXT
 );
 
 DROP TABLE IF EXISTS accesoiresoorten;
 CREATE TABLE accesoiresoorten (
 acs_id INTEGER PRIMARY KEY AUTOINCREMENT,
-naam TEXT
+acs_naam TEXT
 );
 
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is en voor een mooi degelijk prijsje.', '816905633-0', 10.50, 'Cavia', 'Zwart', 'Langhaar', 1, 1);
@@ -96,14 +96,14 @@ insert into products (name, description, code, price, diersoort, kleur, ras, ges
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Kat', 'Heeft u altijd al een schattig chagerijninge kat gewild dan is dit uw kans om een britse langhaar te verkrijgen (150 euro zonder vaccinaties en 350 euro met vacinaties.).', '2353465564-2', 150.00, 'Kat', 'Grijs', 'Britse Langhaar', 2, 10);
 
 
-insert into accesoires (naam, kleur, soort) values ('caviahok', 'bruinhout', 1);
-insert into accesoires (naam, kleur, soort) values ('bal', 'rood', 2);  
-insert into accesoires (naam, kleur, soort) values ('trui', 'geel', 3); 
-insert into accesoires (naam, kleur, soort) values ('hondenhuis', 'blauw', 1);
-insert into accesoires (naam, kleur, soort) values ('brocolliknuffel', 'groen', 2);  
-insert into accesoires (naam, kleur, soort) values ('WK trui', 'oranje', 3); 
-insert into accesoires (naam, kleur, soort) values ('muis aan hengel', 'wit', 2);
-insert into accesoires (naam, kleur, soort) values ('kattenmand', 'rood', 1);  
+insert into accesoires (a_naam, kleur, soort) values ('caviahok', 'bruinhout', 1);
+insert into accesoires (a_naam, kleur, soort) values ('bal', 'rood', 2);  
+insert into accesoires (a_naam, kleur, soort) values ('trui', 'geel', 3); 
+insert into accesoires (a_naam, kleur, soort) values ('hondenhuis', 'blauw', 1);
+insert into accesoires (a_naam, kleur, soort) values ('brocolliknuffel', 'groen', 2);  
+insert into accesoires (a_naam, kleur, soort) values ('WK trui', 'oranje', 3); 
+insert into accesoires (a_naam, kleur, soort) values ('muis aan hengel', 'wit', 2);
+insert into accesoires (a_naam, kleur, soort) values ('kattenmand', 'rood', 1);  
 
 
 insert into voedsel (voedselsoort, merk, hoeveelheid) values (5, 'Carnibest', 1);
@@ -151,19 +151,19 @@ insert into accesoireId_tabel (dieren_soort, accesoires_id) values (8, 8);
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (8, 7);
 
 
-insert into voedselsoorten (naam) values ('droogvoer');
-insert into voedselsoorten (naam) values ('groenvoer');
-insert into voedselsoorten (naam) values ('snack');
-insert into voedselsoorten (naam) values ('visvoer');
-insert into voedselsoorten (naam) values ('vlees');
+insert into voedselsoorten (vs_naam) values ('droogvoer');
+insert into voedselsoorten (vs_naam) values ('groenvoer');
+insert into voedselsoorten (vs_naam) values ('snack');
+insert into voedselsoorten (vs_naam) values ('visvoer');
+insert into voedselsoorten (vs_naam) values ('vlees');
 
-insert into geslachten (naam) values ('mannetje');
-insert into geslachten (naam) values ('vrouwtje');
-insert into geslachten (naam) values ('nvt');
+insert into geslachten (g_naam) values ('mannetje');
+insert into geslachten (g_naam) values ('vrouwtje');
+insert into geslachten (g_naam) values ('nvt');
 
-insert into accesoiresoorten (naam) values ('verblijf');
-insert into accesoiresoorten (naam) values ('speeltje');
-insert into accesoiresoorten (naam) values ('kleding');
+insert into accesoiresoorten (acs_naam) values ('verblijf');
+insert into accesoiresoorten (acs_naam) values ('speeltje');
+insert into accesoiresoorten (acs_naam) values ('kleding');
 
 
 
