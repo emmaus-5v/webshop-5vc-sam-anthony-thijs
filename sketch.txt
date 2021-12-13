@@ -278,3 +278,5 @@ insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 2, 7);
 insert into id_tabel (dieren_soort, voedsel_id, accesoires_id) values (8, 1, 7);*/
 
 
+ // clone.querySelector(".product_code").textContent = product.code
+ 
