@@ -86,7 +86,7 @@ function getProductById(request, response) {
 
   let data = []
   const product_id = parseInt(request.params.id)
-  const sqlOpdracht = db.prepare('SELECT * FROM products WHERE id = ?')
+  const sqlOpdracht = db.prepare('SELECT * FROM products LEFT JOIN accesoireId_tabel ON products.id = accesoireId_tabel.dieren_soort LEFT JOIN accesoires ON accesoireId_tabel.accesoires_id = accesoires.a_id LEFT JOIN accesoiresoorten ON accesoires.soort = accesoiresoorten.acs_id LEFT JOIN geslachten ON products.geslacht = geslachten.g_id LEFT JOIN voedselId_tabel ON products.id  = voedselId_tabel.dieren_soort LEFT JOIN voedsel ON voedselId_tabel.voedsel_id = voedsel.v_id LEFT JOIN voedselsoorten ON voedsel.voedselsoort = voedselsoorten.vs_id WHERE id = ? GROUP BY products.id ORDER BY products.name')
   data = sqlOpdracht.all(product_id)
   response.status(200).json(data[0])
 }
