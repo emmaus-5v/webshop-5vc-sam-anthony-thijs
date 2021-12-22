@@ -289,3 +289,45 @@ SELECT * FROM products JOIN accesoireId_tabel ON products.id = accesoireId_tabel
 SELECT products.name, products.diersoort, products.kleur, products.ras, products.gewicht, products.code, products.description, products.price, geslachten.naam, accesoires.naam, accesoires.kleur, accesoiresoorten.naam, voedselsoorten.naam, voedsel.merk, voedsel.hoeveelheid FROM products JOIN accesoireId_tabel ON products.id = accesoireId_tabel.dieren_soort JOIN accesoires ON accesoireId_tabel.accesoires_id = accesoires.id JOIN accesoiresoorten ON accesoires.soort = accesoiresoorten.id JOIN geslachten ON products.geslacht = geslachten.id JOIN voedselId_tabel ON products.id  = voedselId_tabel.dieren_soort JOIN voedsel ON voedselId_tabel.voedsel_id = voedsel.id JOIN voedselsoorten ON voedsel.voedselsoort = voedselsoorten.id;
 
  // clone.querySelector(".product_code").textContent = product.code
+
+
+
+
+
+*js code*
+
+function countVoedsel(request, response) {
+  console.log('API ontvangt /api/voedsel/?', request.query)
+
+  const category_id = parseInt(request.query.category)
+  let data = []
+  if (category_id > 0) {
+    const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY id ASC')
+    data = sqlOpdracht.all(category_id)
+  } else {
+    const sqlOpdracht = db.prepare('SELECT COUNT(*) AS "Aantal Merken Voedsel" FROM voedsel')
+    data = sqlOpdracht.all()
+  }
+  // console.log(JSON.stringify(data, null, 2))
+  response.status(200).send(data)
+  console.log('API verstuurt /api/voedsel/')
+}
+
+
+
+function countAccesoires(request, response) {
+  console.log('API ontvangt /api/accesoires/?', request.query)
+
+  const category_id = parseInt(request.query.category)
+  let data = []
+  if (category_id > 0) {
+    const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY id ASC')
+    data = sqlOpdracht.all(category_id)
+  } else {
+    const sqlOpdracht = db.prepare('SELECT COUNT(*) AS "Aantal Accesoires" FROM accesoires')
+    data = sqlOpdracht.all()
+  }
+  // console.log(JSON.stringify(data, null, 2))
+  response.status(200).send(data)
+  console.log('API verstuurt /api/accesoires/')
+}
