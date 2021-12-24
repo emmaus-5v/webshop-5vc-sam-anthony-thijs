@@ -54,7 +54,6 @@
               <li><span class="propert-name">Prijs: </span><span class="product_price"></span></li>
               <li><span class="propert-name">soort: </span><span class="product_soort"></span></li>
               <li><span class="propert-name">Ras: </span><span class="product_ras"></span></li>
-              <!--<<li><span class="propert-name">Code: </span><span class="product_code"></span></li>-->
               <li><span class="propert-name">Kleur: </span><span class="product_kleur"></span></li>
               <li><span class="propert-name">Geslacht: </span><span class="product_geslacht"></span></li>
               <li><span class="propert-name">Gewicht: </span><span class="product_gewicht"></span></li>
@@ -93,9 +92,8 @@
                 clone.querySelector(".product_description").textContent =`${product.description.substr(0, 200)}`
                 clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
 			          clone.querySelector(".product_gewicht").textContent = ` ${product.gewicht.toFixed(2)} kg`
-			        // clone.querySelector(".product_code").textContent = product.code
                 clone.querySelector(".product_id").value = product.id
-                clone.querySelector(".product_basispakket").textContent = `Bij aanschaf van uw eerste ${product.name} krijgt u een van onze ${product.hoeveelheid_a} speciaal voor uw nieuwe huisdier gemaakte basispaketten cadeau. In een basispakket zit wat voedsel en een accesoire. Een voorbeeld van een basispaket is een ${product.a_naam} met ${product.hoeveelheid} kg ${product.vs_naam} van het merk ${product.merk}.`
+                clone.querySelector(".product_basispakket").textContent = `Bij aanschaf van uw eerste ${product.name} krijgt u een van onze ${product.hoeveelheid_a} speciaal voor uw nieuwe huisdier gemaakte basispaketten cadeau. In een basispakket zit wat voedsel en een accesoire. Een voorbeeld van een basispaket is een ${product.a_naam} (${product.a_kleur}) met ${product.hoeveelheid} kg ${product.vs_naam} van het merk ${product.merk}.`
 			          clone.querySelector(".product_kleur").textContent = product.kleur
                 clone.querySelector(".product_geslacht").textContent = product.g_naam
                 clone.querySelector(".product_soort").textContent = product.ds_naam
