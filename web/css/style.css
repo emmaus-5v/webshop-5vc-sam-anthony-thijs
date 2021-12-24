@@ -74,7 +74,10 @@ footer {
   float: left;
 }
 
-body{
-  background-color:rgba(97, 60, 60, 0.425);
-};
+html {
+  background-image: url("../images/achtergrond1.jpg") ;
+}
+body {
 
+    background-color:rgba(255,255,255,50%);
+}
