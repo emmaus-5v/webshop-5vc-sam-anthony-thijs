@@ -3,6 +3,7 @@
 footer {
   margin: 20px;
   font-size: 12px;
+  background-color: ghostwhite;
 } 
 
 .toast {
@@ -79,5 +80,5 @@ html {
 }
 body {
 
-    background-color:rgb(255, 255, 255, 45%);
+    background-color:rgb(255, 255, 255, 50%);
 }
