@@ -1,6 +1,8 @@
 --
 -- create tables
---
+/*Bij products staan er 8 producten, maar wij hebben het zo gedaan dat we meerdere producten in een bundel verkopen zodat we in principe meer
+ dan 10 producten verkopen, de front pagina niet te rommelig wordt en de focus staat op dieren. */
+
 /*tabel goed*/
 
 DROP TABLE IF EXISTS products; 
