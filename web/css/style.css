@@ -3,7 +3,7 @@
 footer {
   margin: 20px;
   font-size: 12px;
-  background-color: rgb(255, 234, 198);
+  background-color: rgb(212, 255, 177);
 } 
 
 html {
@@ -90,6 +90,6 @@ body {
 /* specifiek */
 
 #artikelen {
-  background-color: rgb(255, 234, 198);
+  background-color: rgb(212, 255, 177);
 }
 
