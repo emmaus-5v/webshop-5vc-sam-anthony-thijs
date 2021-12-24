@@ -103,7 +103,7 @@ insert into products (name, description, code, price, diersoort, kleur, ras, ges
 
 
 insert into accesoires (a_naam, a_kleur, soort) values ('caviahok', 'bruinhout', 1);
-insert into accesoires (a_naam, a_kleur, soort) values ('bal', 'rood', 2);  
+insert into accesoires (a_naam, a_kleur, soort) values ('speelbal', 'rood', 2);  
 insert into accesoires (a_naam, a_kleur, soort) values ('trui', 'geel', 3); 
 insert into accesoires (a_naam, a_kleur, soort) values ('hondenhuis', 'blauw', 1);
 insert into accesoires (a_naam, a_kleur, soort) values ('brocolliknuffel', 'groen', 2);  
