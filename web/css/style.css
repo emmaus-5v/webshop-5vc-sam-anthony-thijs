@@ -3,8 +3,18 @@
 footer {
   margin: 20px;
   font-size: 12px;
-  background-color: ghostwhite;
+  background-color: rgb(255, 234, 198);
 } 
+
+html {
+  background-image: url("../images/achtergrond1.jpg") ;
+}
+
+body {
+    background-color:rgb(255, 255, 255, 50%);
+}
+
+
 
 .toast {
     /* dirty: below 'card' button  */
@@ -37,7 +47,9 @@ footer {
   min-height:10em
 }
 
+
 /* index page */
+
 .product{
   width: 100%; 
   height: inherit; 
@@ -75,10 +87,9 @@ footer {
   float: left;
 }
 
-html {
-  background-image: url("../images/achtergrond1.jpg") ;
-}
-body {
+/* specifiek */
 
-    background-color:rgb(255, 255, 255, 50%);
+#artikelen {
+  background-color: rgb(255, 234, 198);
 }
+
