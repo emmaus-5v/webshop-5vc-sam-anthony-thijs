@@ -1,7 +1,5 @@
 --
 -- create tables
-/*Bij products staan er 8 producten, maar wij hebben het zo gedaan dat we meerdere producten in een bundel verkopen zodat we in principe meer
- dan 10 producten verkopen, de front pagina niet te rommelig wordt en de focus staat op dieren. */
 
 /*tabel goed*/
 
@@ -19,17 +17,6 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
-/*
-DROP TABLE IF EXISTS dieren;
-CREATE TABLE dieren (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  diersoort TEXT,
-  kleur TEXT,
-  ras TEXT,
-  geslacht INTEGER,
-  gewicht NUMERIC(10, 2),
-  product_id INTEGER
-);*/
 
 DROP TABLE IF EXISTS accesoires;
 CREATE TABLE accesoires (
@@ -47,14 +34,6 @@ CREATE TABLE voedsel (
   merk TEXT,
   hoeveelheid INTEGER
 );
-
-/*DROP TABLE IF EXISTS id_tabel;
-CREATE TABLE id_tabel (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-dieren_soort INTEGER,
-voedsel_id INTEGER,
-accesoires_id INTEGER
-);*/
 
 DROP TABLE IF EXISTS voedselId_tabel;
 CREATE TABLE voedselId_tabel (
@@ -94,7 +73,7 @@ ds_id INTEGER PRIMARY KEY AUTOINCREMENT,
 ds_naam TEXT
 );
 
-insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is voor een mooi degelijk prijsje.', '816905633-0', 10.50, 1, 'Zwart', 'Langhaar', 1, 1);
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Cavia', 'Cavia is een knaagdier wat in verschillende kleuren beschikbaar is voor een mooi degelijk prijsje.', '816905633-0', 15.49, 1, 'Zwart', 'Langhaar', 1, 1);
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Konijn', 'Heeft u altijd al een schattig knaagdier gewild met lange oren? Dan is dit uw kans voor een schattig kleine dwergse langhoor.', '445924201-X', 15.60, 2, 'bruin', 'Nederlandse Hangoor Dwerg', 2, 5);
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Labrador','Wilt u een hond, maar weet je niet waaraan je moet beginnen? Een leuke bruine labrador is een goeie keus als eerste hond! *199 euro voor een labrador pup zonder vaccinaties, mocht je het bij een dierenarts willen. 600 euro met vacinaties als je het bij ons meteen wilt.*', '693155505-7', 199.00, 3, 'bruin', 'Labrador', 1, 12);
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Goudvis', 'Hier kan je uiteraard ook een goudvis kopen! Mocht het voor je kind zijn of voor jezelf, voor ieder is het geschikt.', '686928463-6', 4.50, 4, 'Oranje', 'nvt', 3, 0.1);
@@ -102,7 +81,7 @@ insert into products (name, description, code, price, diersoort, kleur, ras, ges
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Capybara', 'Heeft u altijd al een grote cavia/knaagdier gewild? Dan is dit uw kans om een capybara te verkrijgen. *Wij hebben alle benodigde vergunningen om hem te mogen verkopen. Daarbij moet de klant zelf ook de benodigde vergunningen laten zien*.', '2353465564-2', 696.96, 6, 'Bruin', 'nvt', 1, 40);
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Sprinkhaan', 'Toch meer een insecten liefhebber? Of heb je hem nodig als voedsel voor je dieren? Voor beide redenen hier te koop.', '2353465564-2', 1.50, 7, 'Groen', 'nvt', 2, 0.07);
 insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Kat', 'Heeft u altijd al een schattige, mogelijk, chagerijninge kat gewild? Grijp dan nu uw kans! *150 euro zonder vaccinaties en 350 euro met vacinaties.*', '2353465564-2', 150.00, 8, 'Grijs', 'Britse Langhaar', 2, 10);
-
+insert into products (name, description, code, price, diersoort, kleur, ras, geslacht, gewicht) values ('Hamster', 'Een Hamster is een knaagdier wat in verschillende kleuren beschikbaar is voor een mooi degelijk prijsje. Ze zijn erg schattig en iets kleiner dan een cavia.', '816905633-0', 10.49, 9, 'beige', 'goudhamster', 1, 0.7);
 
 insert into accesoires (a_naam, a_kleur, soort) values ('caviahok', 'bruinhout', 1);
 insert into accesoires (a_naam, a_kleur, soort) values ('speelbal', 'rood', 2);  
@@ -139,13 +118,12 @@ insert into voedselId_tabel (dieren_soort, voedsel_id) values (6, 7);
 insert into voedselId_tabel (dieren_soort, voedsel_id) values (7, 3);
 insert into voedselId_tabel (dieren_soort, voedsel_id) values (8, 1);
 insert into voedselId_tabel (dieren_soort, voedsel_id) values (8, 2);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (9, 2);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (9, 3);
+insert into voedselId_tabel (dieren_soort, voedsel_id) values (9, 7);
 
 
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (1, 1);
-insert into accesoireId_tabel (dieren_soort, accesoires_id) values (1, 1);
-insert into accesoireId_tabel (dieren_soort, accesoires_id) values (1, 1);
-insert into accesoireId_tabel (dieren_soort, accesoires_id) values (2, 1);
-insert into accesoireId_tabel (dieren_soort, accesoires_id) values (2, 1);
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (2, 1);
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (3, 2);
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (3, 3);
@@ -158,6 +136,7 @@ insert into accesoireId_tabel (dieren_soort, accesoires_id) values (6, 2);
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (7, 9);
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (8, 7);
 insert into accesoireId_tabel (dieren_soort, accesoires_id) values (8, 8);
+insert into accesoireId_tabel (dieren_soort, accesoires_id) values (9, 1);
 
 
 insert into voedselsoorten (vs_naam) values ('droogvoer');
@@ -182,6 +161,7 @@ insert into diersoorten (ds_naam) values ('grasparkiet');
 insert into diersoorten (ds_naam) values ('capybara');
 insert into diersoorten (ds_naam) values ('sprinkhaan');
 insert into diersoorten (ds_naam) values ('kat');
+insert into diersoorten (ds_naam) values ('hamster');
 
 
 --
